@@ -28,6 +28,7 @@ const wagmiConfig = createConfig({
 // 3. Configure modal ethereum client
 const ethereumClient = new EthereumClient(wagmiConfig, chains);
 
+
 // 4. Wrap your app with WagmiProvider and add <Web3Modal /> component
 export default function App({ Component, pageProps }) {
   const [ready, setReady] = useState(false);
@@ -49,9 +50,9 @@ export default function App({ Component, pageProps }) {
         projectId={projectId} 
         ethereumClient={ethereumClient} 
         themeMode="light" // dark
-        defaultChain={polygon}  // 기본 체인
         termsOfServiceUrl="#" // 서비스 약관
         privacyPolicyUrl="#"  // 개인정보
+        
         // tokenOptions={{
         //   desktopWallet: [
         //     {

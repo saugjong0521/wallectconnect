@@ -1,5 +1,6 @@
 import { Web3Button, Web3NetworkSwitch, W3mQrCode } from "@web3modal/react";
 import CustomButton from "../components/CustomButton";
+import MetaMaskBtn from "../../components/MetaMaskBtn";
 
 export default function Home( ) {
 
@@ -28,6 +29,9 @@ export default function Home( ) {
         imageUrl="url/to/image" 
         uri="data" 
       />
+      <br />
+
+      <MetaMaskBtn/>
     </>
   );
 }
